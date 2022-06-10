@@ -1,2 +1,1 @@
-# Merge-Strings-Alternately
-String
+https://leetcode.com/problems/merge-strings-alternately
