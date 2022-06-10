@@ -1,0 +1,23 @@
+class Solution {
+public:
+    string mergeAlternately(string word1, string word2) {
+        string result;
+        int n = min(word1.length(), word2.length());
+        int cur = 0;
+        while (cur<n){
+            result += word1[cur];
+            result += word2[cur];
+            cur++;
+        }
+        if (word1.length() > word2.length()){
+            while (cur<word1.length()){
+             result += word1[cur++];   
+            }
+        } else{
+            while (cur<word2.length()){
+                result += word2[cur++];
+            }
+        }
+        return result;
+    }
+};
